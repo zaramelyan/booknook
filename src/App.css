@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
 display: flex;
 color: rgb(71, 47, 47);
@@ -5,7 +9,6 @@ justify-content: center;
 }
 
 h1 {
-  padding: 20px 0;
   font-family: 'Manrope', sans-serif;
   font-size: 4vw;
 }
@@ -27,13 +30,21 @@ li:hover {
   cursor: pointer;
 }
 
+.search {
+  width: 20vw;
+}
+
+.search, button {
+  height: 5vh;
+}
+
 button {
+  width: 300px;
   padding: 5px 7px;
   border: none;
-  border-radius: 3px;
-  color: darkslategrey;
   margin: 4px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+  text-transform: uppercase;
 }
 
 button:hover {

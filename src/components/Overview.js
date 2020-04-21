@@ -14,6 +14,9 @@ class Overview extends React.Component {
             searching: false,
             logging: []
         }
+        
+    this.handleSearch = this.handleSearch.bind(this);
+    this.handleChangeSearch  = this.handleChangeSearch.bind(this);
     }
 
     async componentDidMount() {
@@ -127,8 +130,8 @@ class Overview extends React.Component {
         <div className="main">
             <button onClick={this.handleAddButton.bind(this)}>Add new book</button>
             <p>...or search for a book.</p>
-                <input type="text" name="search" value={this.state.search} onChange={this.handleChangeSearch.bind(this)}></input>
-                <button onClick={this.handleSearch.bind(this)}>Search</button>
+                <input class="search" type="text" name="search" value={this.state.search} onChange={this.handleChangeSearch}></input>
+                <button onClick={this.handleSearch}>Search</button>
                 
             <div className="container">
             {books.length && !this.state.searching ? (

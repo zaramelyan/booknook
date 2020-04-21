@@ -47,8 +47,7 @@ class App extends React.Component {
       <HashRouter>
       <div>
         <h1>Book Nook</h1>
-        
-        <h2>My favourite books</h2>
+      
         {/* <ActiveView 
         {...params}
         changeView={this.handleChangeView.bind(this)}
