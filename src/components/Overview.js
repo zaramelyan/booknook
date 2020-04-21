@@ -139,6 +139,7 @@ class Overview extends React.Component {
                 )}
     
                 </div>
+                <div className="legs"></div>
                
         </div>
     );
